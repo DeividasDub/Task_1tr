@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 1080px; width: 2196px; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+@font-face {
+    font-family: OpenSans;
+    src: url(assets/FontsFree-Net-OpenSans-Regular-2.ttf) format(truetype);
+}
+
+@font-face {
+    font-family: Monsterrat;
+    src: url(assets/Montserrat.ttf) format(truetype);
+}
+
+.Opensans {
+    font-family: OpenSans;
+}
+
+.Monsterrat {
+    font-family: Monsterrat;
+}

@@ -1,0 +1,147 @@
+.bg {
+  background-image: url(.images/particles5.png);
+  height: 1080px;
+  width: 2196px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #F8F8F8;
+  padding-top: 74px;
+}
+
+.logo {
+    background-image: url(.images/itmalogo.png);
+    height: 500px;
+    width: 500px;
+    background-position: center;
+}
+
+.form {
+    margin: auto;
+    width: 800px;
+    background-color: #FFFFFF;
+    border-color: white;
+    border-radius: 0%;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.blue {
+    color: #1C4872;
+    font-size: 24px;
+    font-style: Monsterrat;
+    text-align: center;
+}
+
+.blue1 {
+    color: #1C4872;
+    font-size: 24px;
+    font-style: Monsterrat;
+}
+
+.paprastas {
+    color: #000000;
+    font-style: Open Sans;
+    text-align: center;
+    font-size: 14px;
+}
+
+.mygtukas {
+    text-transform: uppercase;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-open-sans);
+    text-align: center;
+    font: normal normal normal 14px/19px Open Sans;
+    letter-spacing: 1.53px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1C4872;
+}
+
+.mygtukas1 {
+    text-transform: uppercase;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-open-sans);
+    text-align: center;
+    font: normal normal normal 14px/19px Open Sans;
+    letter-spacing: 1.53px;
+    color: #1C4872;
+    text-transform: uppercase;
+    opacity: 1;
+    height: 50px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1C4872;
+}
+
+::ng-deep .mat-form-field .mat-input-element {
+    color: #000000;
+    border-color: #D6D6D6;
+    border-radius: 10px;
+}
+::ng-deep .mat-form-field .mat-form-field-label {
+    color: #000000;    
+    border-color: #D6D6D6;
+    height: 32px;
+}
+::ng-deep .mat-form-field .mat-form-field-underline {
+    color: #000000;
+    border-color: #D6D6D6;
+    height: 32px;
+}
+::ng-deep .mat-form-field .mat-form-field-ripple {
+    color: #000000;
+    border-color: #D6D6D6;
+    height: 32px;
+}
+::ng-deep .mat-form-field .mat-form-field-required-marker {
+    color: #000000;
+    border-color: #D6D6D6;
+    height: 32px;
+}
+
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+    color: #000000;
+}
+::ng-deep .mat-form-field.mat-focused .mat-form-field-ripple {
+    color: #000000;
+}
+::ng-deep .mat-form-field.mat-focused .mat-form-field-required-marker {
+    color: #000000;
+}
+::ng-deep .mat-form-field.mat-focused .mat-input-element {
+    color: #000000;
+}
+  
+::ng-deep .mat-form-field.mat-form-field-invalid .mat-input-element {
+    color: #FF0000;
+}
+::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label {
+    color: #FF0000!important;
+}
+::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-label .mat-form-field-required-marker {
+    color: #FF0000;
+}
+::ng-deep .mat-form-field.mat-form-field-invalid .mat-form-field-ripple {
+    color: #FF0000;
+    background-color: #FF0000;
+}
+
+.tekstas {
+    color: black;
+    font-size: 14px;
+    font-style: OpenSans;
+}
+
+.remelis {
+    border-style: solid;
+    border-width: 5px;
+    border-color: #1C4872;
+}

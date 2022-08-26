@@ -1,0 +1,206 @@
+<div class="bg">
+    <div class="form">
+        <div>
+            <p style="text-align: center;"><img src="assets/itmalogo.png" height="60px" width="262px"> </p>
+        </div>
+        <mat-horizontal-stepper [linear]="isLinear" #stepper>
+            <mat-step [stepControl]="firstFormGroup">
+                <form [formGroup]="firstFormGroup">
+                    <br />
+                    <p class="blue">
+                        <b>Kontaktinė informacija</b>
+                    </p>
+                    <br />
+                    <p class="paprastas">
+                        Pateikite savo kontaktinę informaciją, kad galėtume žinoti kas registruoja atnaujinimus :)</p>
+                    <ng-template matStepLabel>Kontaktai</ng-template>
+                    <br />
+                    <br />
+
+                    <p class="tekstas"><b>Vardas, pavardė:*</b></p>
+                    <mat-form-field appearance="outline" style="width: 703px;">
+                        <input matInput formControlName="vardas" required>
+                        <mat-hint>Įveskite savo vardą ir pavardę</mat-hint>
+                    </mat-form-field>
+                    <br />
+                    <br />
+
+                    <p class="tekstas"><b>El. pašto adresas:*</b></p>
+                    <mat-form-field appearance="outline" style="width: 703px;">
+                        <input matInput formControlName="pastas" required>
+                        <mat-hint>Įveskite el. pašto adresą kuriuo prireikus galėsime susisiekti</mat-hint>
+                    </mat-form-field>
+                    <br />
+                    <br />
+
+                    <p class="tekstas"><b>Telefono numeris:*</b></p>
+                    <mat-form-field appearance="outline" style="width: 703px;">
+                        <input matInput formControlName="telefonas" required>
+                        <mat-hint>Įveskite telefono numerį kuriuo prireikus galėsime susisiekti</mat-hint>
+                    </mat-form-field>
+                    <br />
+                    <br />
+
+                    <p class="tekstas"><b>Projektas:*</b></p>
+                    <mat-form-field appearance="outline" style="width: 703px;">
+                        <input matInput formControlName="projektas" required style="height: 32px;">
+                        <mat-hint>Kokį Jūsų projektą mes vykdome?</mat-hint>
+                    </mat-form-field>
+                    <br />
+                    <br />
+
+                    <div>
+                        <button mat-button matStepperNext class="mygtukas1"
+                            style="background-color: #ffffff; width: 350px; border-color: black; border-radius: 5px;">Pradžia</button>
+                        <button mat-button matStepperNext class="mygtukas"
+                            style="background-color: #1C4872; width: 350px;">Pageidavimai</button>
+                    </div>
+                </form>
+            </mat-step>
+
+
+            <mat-step [stepControl]="secondFormGroup">
+                <form [formGroup]="secondFormGroup">
+                    <ng-template class="remelis" matStepLabel>Pageidavimai</ng-template>
+                    <br />
+                    <br />
+                    <p class="blue">
+                        <b>Pageidavimai atnaujinti</b>
+                    </p>
+                    <br />
+                    <p class="paprastas">
+                        Šiame lange galite suvesti visus norimus įregistruoti pageidavimus ką nors atnaujinti.</p>
+                    <br />
+                    <br />
+                    <p class="tekstas"><b>Trumpas užduoties aprašymas:*</b></p>
+                    <mat-form-field appearance="outline" style="width: 703px;">
+                        <input matInput formControlName="aprasymas" required style="height: 32px;">
+                        <mat-hint>Labai trumpas užduoties aprašymas.</mat-hint>
+                    </mat-form-field>
+                    <br />
+                    <br />
+                    <p class="tekstas"><b>Išsamus užduoties aprašymas ar papildoma informacija:</b></p>
+                    <mat-form-field appearance="outline" style="width: 703px;">
+                        <input matInput formControlName="uzdaprasymas" style="height: 32px;">
+                        <mat-hint>Jeigu reikia galite suteikti daugiau informacijos apie užduotį</mat-hint>
+                    </mat-form-field>
+                    <br />
+                    <br />
+                    <p class="tekstas"><b>Atlikimo terminas:</b></p>
+                    <mat-form-field appearance="outline" style="width: 703px;">
+                        <input matInput formControlName="terminas" style="height: 32px;">
+                        <mat-hint>Jeigu užduotį būtina atlikti iki tam tikro meto, galite nurodyti datą.</mat-hint>
+                    </mat-form-field>
+                    <br />
+                    <br />
+                    <p class="tekstas"><b>Atlikimo terminas:</b></p>
+                    <mat-form-field appearance="outline" style="width: 703px;">
+                        <input matInput formControlName="nuoroda" style="height: 32px;">
+                        <mat-hint>Jeigu žinote konkretų internetinio tinklapio adresą, kuriame nutiko klaida ar reikia
+                            kažką atlikti, galite nurodyti čia.</mat-hint>
+                    </mat-form-field>
+                    <br />
+                    <br />
+                    <p class="tekstas"><b>Failo(-ų) pridėjimas:</b></p>
+                    <mat-form-field appearance="outline" style="width: 703px;">
+                        <input matInput formControlName="failai" style="height: 32px;">
+                        <mat-hint>Galite prisegti papildomą informaciją, tokią kaip paveiksliukai, tekstiniai dokumentai
+                            ar kita.</mat-hint>
+                    </mat-form-field>
+                    <br />
+                    <br />
+                    <div>
+                        <button mat-button matStepperPrevious class="mygtukas1"
+                            style="background-color: #ffffff; width: 350px; border-color: black; border-radius: 5px;">Kontaktai</button>
+                        <button mat-button matStepperNext class="mygtukas"
+                            style="background-color: #1C4872; width: 350px;">Papildomai</button>
+                    </div>
+                </form>
+            </mat-step>
+
+
+            <mat-step [stepControl]="thirdFormGroup">
+                <form [formGroup]="thirdFormGroup">
+                    <ng-template matStepLabel>Papildomai</ng-template>
+                    <br />
+                    <br />
+                    <p class="blue">
+                        <b>Papildomi komentarai</b>
+                    </p>
+                    <br />
+                    <p class="paprastas">
+                        Jeigu dar norite ką nors paminėti.</p>
+                    <br />
+                    <br />
+                    <p class="tekstas"><b>Papildomi komentarai:</b></p>
+                    <mat-form-field appearance="outline" style="width: 703px;">
+                        <input matInput formControlName="komentarai" style="height: 32px;">
+                        <mat-hint>Galite įvesti papildomą informaciją, kuri gali būti svarbi.</mat-hint>
+                    </mat-form-field>
+                    <br />
+                    <br />
+                    <div>
+                        <button mat-button matStepperPrevious class="mygtukas1"
+                            style="background-color: #ffffff; width: 350px; border-color: black; border-radius: 5px;">Pageidavimai</button>
+                        <button mat-button matStepperNext class="mygtukas"
+                            style="background-color: #1C4872; width: 350px;">Peržiūra</button>
+                    </div>
+                </form>
+            </mat-step>
+            <mat-step>
+                <ng-template matStepLabel>Peržiūra</ng-template>
+                <br />
+                <br />
+                <p class="blue">
+                    <b>Peržiūra</b>
+                </p>
+                <br />
+                <p class="paprastas">
+                    Čia galite peržiūrėti Jūsų suvestą informaciją ir pateikti jei viskas gerai.</p>
+                <br />
+                <br />
+                <p style="color: #1C4872; font-size: 20px; font-style: Montserrat;"><b>Kontaktinė informacija</b>
+                </p>
+                <mat-list>
+                    <mat-list-item> <strong>Vardas, pavardė: </strong> {{ this.firstFormGroup.value.vardas }}
+                    </mat-list-item>
+                    <mat-list-item> <strong>El.pašto adresas: </strong> {{ this.firstFormGroup.value.pastas }}
+                    </mat-list-item>
+                    <mat-list-item> <strong>Telefono numeris: </strong> {{ this.firstFormGroup.value.telefonas }}
+                    </mat-list-item>
+                    <mat-list-item> <strong>Projektas: </strong> {{ this.firstFormGroup.value.projektas }}
+                    </mat-list-item>
+                </mat-list>
+                <br />
+                <br />
+                <p style="color: #1C4872; font-size: 20px; font-style: Montserrat;"><b>Pageidavimas</b>
+                </p>
+                <mat-list>
+                    <mat-list-item> <strong>Trumpas aprašymas: </strong> {{ this.secondFormGroup.value.aprasymas }}
+                    </mat-list-item>
+                    <mat-list-item> <strong>Išsamus aprašymas: </strong> {{ this.secondFormGroup.value.uzdaprasymas }}
+                    </mat-list-item>
+                    <mat-list-item> <strong>Terminas: </strong> {{ this.secondFormGroup.value.terminas }}
+                    </mat-list-item>
+                    <mat-list-item> <strong>Nuoroda: </strong> {{ this.secondFormGroup.value.nuoroda }}</mat-list-item>
+                    <mat-list-item> <strong>Failo(-ų) pridėjimas: </strong> {{ this.secondFormGroup.value.failai }}
+                    </mat-list-item>
+                </mat-list>
+                <br />
+                <br />
+                <p style="color: #1C4872; font-size: 20px; font-style: Montserrat;"><b>Papildomi komentarai</b>
+                </p>
+                <mat-list>
+                    <mat-list-item> {{ this.thirdFormGroup.value.komentarai }}</mat-list-item>
+                </mat-list>
+                <div>
+                    <button mat-button matStepperPrevious class="mygtukas1"
+                        style="background-color: #ffffff; width: 350px; border-color: black; border-radius: 5px;">Papildomai</button>
+                    <button mat-button [routerLink]="'/pabaiga'" class="mygtukas"
+                        style="background-color: #1C4872; width: 350px;"><b>Pabaiga</b></button>
+
+                </div>
+            </mat-step>
+        </mat-horizontal-stepper>
+    </div>
+</div>

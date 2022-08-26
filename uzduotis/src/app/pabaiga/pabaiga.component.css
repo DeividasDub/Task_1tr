@@ -1,0 +1,55 @@
+.bg {
+    background-image: url(.images/particles5.png);
+    height: 1080px;
+    background-repeat: no-repeat;
+    background-size: full;
+    width: 2196px;
+    background-color: #F8F8F8;
+    padding-top: 164px;
+}
+
+.form {
+    margin:auto;
+    width: 800px;
+    height: 338px;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 1;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border-radius: 0%;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.logo {
+    padding-top: 62px;
+    padding-bottom: 31px;
+    padding-left: 269px;
+}
+
+.blue {
+    color: #1C4872;
+    font-size: 24px;
+    font-style: Monsterrat;
+    text-align: center;
+}
+
+.paprastas {
+    color: #000000;
+    font-style: OpenSans;
+    text-align: center;
+    font-size: 14px;
+}
+
+.mygtukas {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-14)/var(--unnamed-line-spacing-19) var(--unnamed-font-family-open-sans);
+    text-align: center;
+    font: normal normal normal 14px/19px OpenSans;
+    letter-spacing: 1.53px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    width: 220px;
+    height: 50px;
+    left: 290px;
+    background-color: #1C4872;
+}
+
